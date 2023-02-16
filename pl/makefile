@@ -12,4 +12,6 @@ all: $(OBJS)
 
 clean:
 	rm $(OBJS)
-	rm *.so
+	rm -f *.so
+	rm -f *.o
+	@echo FIN RM PL

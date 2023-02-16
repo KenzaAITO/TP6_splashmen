@@ -3,5 +3,11 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"C_Cpp.default.includePath": [
+			"${workspaceFolder}/path/to/splash.h",
+			"${workspaceFolder}/**"
+		]
+	}
 }
