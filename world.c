@@ -39,34 +39,11 @@ void world_create_players()
 void world_do_player_action(t_player *p_player)
 {
     // Get the player's next action from the play_actions array
-    char next_action = play_actions[p_player->action_index];
+    char next_action = play_actions[p_player->action];
 
     // Update the player's position based on the action
     int new_x = p_player->x;
     int new_y = p_player->y;
-
-    if (next_action == ACTION_UP) {
-        new_y--;
-    } else if (next_action == ACTION_DOWN) {
-        new_y++;
-    } else if (next_action == ACTION_LEFT) {
-        new_x--;
-        if (new_x < 0) {
-            new_x = MAP_SIZE - 1;
-        }
-    } else if (next_action == ACTION_RIGHT) {
-        new_x++;
-        if (new_x >= MAP_SIZE) {
-            new_x = 0;
-        }
-    }
-
-    // Make sure the new position is within the game map
-    if (new_y < 0) {
-        new_y = 0;
-    } else if (new_y >= MAP_SIZE) {
-        new_y = MAP_SIZE - 1;
-    }
 
     // Color the new spot with the player's ID
     world_paint_spot(new_x, new_y, p_player->id);
@@ -74,7 +51,7 @@ void world_do_player_action(t_player *p_player)
     // Update the player's position and action index
     p_player->x = new_x;
     p_player->y = new_y;
-    p_player->action_index++;
+    p_player->action++;
 }
 
 

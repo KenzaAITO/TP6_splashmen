@@ -4,6 +4,7 @@
 #include "/Users/cecilia/Desktop/SDL2/include/SDL.h"
 #include "/Users/cecilia/Desktop/SDL2/include/SDL_opengl.h"
 
+
 #include "param.h"
 #include "world.h"
 #include "actions.h"
@@ -31,6 +32,7 @@ int SDLCALL watch(void *userdata, SDL_Event *event)
 /* ------------------------------------------------------------------------- */
 int main(int argc, char *argv[])
 {
+
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) != 0)
     {
         SDL_Log("Failed to initialize SDL: %s", SDL_GetError());
@@ -47,7 +49,8 @@ int main(int argc, char *argv[])
         printf("Wrong argument number\n");
         return 1;
     }
-    inits(argc, argv);
+    void inits(int argc,char *argv[]);
+    
 
     main_loop();
 

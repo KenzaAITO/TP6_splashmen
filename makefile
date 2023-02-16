@@ -1,9 +1,10 @@
 # makefile
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
-CFLAGS= -Wall -g2 -fPIC  # -DDEBUG
-LDFLAGS= -ldl -lSDL2
-DFLAGS= actions.o init.o main.o player.o render.o world.o -o splash -lSDL2
+CFLAGS= -Wall -g2 -fPIC -DDEBUG
+#LDFLAGS= -ldl -lSDL2
+LDFLAGS = -L/Users/cecilia/Desktop/SDL2
+DFLAGS= actions.o init.o main.o player.o render.o world.o -o splash /Users/cecilia/Desktop/SDL2
 EXE=splash
 
 players:
@@ -26,7 +27,7 @@ clean_all: clean
 	@echo CLEAN_ALL
 
 tp5: $(OBJS)
-	gcc  $(OBJS) -ldl -lSDL2 -lsplash -o $(EXE)
+	gcc  $(OBJS) -l -lSDL2 -lsplash -o $(EXE)
 	@echo TP5
 
 liba: $(OBJS)

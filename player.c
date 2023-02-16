@@ -1,5 +1,11 @@
 #include <stdlib.h>
-#include "/SDL2/include/SDL.h"
+//#include "/SDL2/include/SDL.h"
+#include "/Users/cecilia/Desktop/SDL2/include/SDL.h"
+#include "/Users/cecilia/Desktop/SDL2/include/SDL_stdinc.h"
+
+
+
+
 
 #include "player.h"
 #include "param.h"
