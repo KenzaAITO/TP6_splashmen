@@ -6,8 +6,8 @@
       "type": "lldb",
       "request": "launch",
       "args": [],
-      "cwd": "/Users/cecilia/Desktop/Projet école/rebornExplosion",
-      "program": "/Users/cecilia/Desktop/Projet école/rebornExplosion/build/Debug/outDebug"
+      "cwd": "/Users/cecilia/Desktop/Projet école/rebornExplosion",
+      "program": "/Users/cecilia/Desktop/Projet école/rebornExplosion/build/Debug/outDebug"
     }
   ]
 }
