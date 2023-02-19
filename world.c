@@ -59,7 +59,7 @@ void world_do_player_action(t_player *p_player)
 /*                                                                           */
 /* ------------------------------------------------------------------------- */
 void world_paint_spot(uint32_t x, uint32_t y, uint32_t num)
-{
+{  
     uint32_t pos = y * MAP_SIZE + x;
     mapmem[pos] = num;
 }
