@@ -39,19 +39,19 @@ void world_create_players()
 void world_do_player_action(t_player *p_player)
 {
     // Get the player's next action from the play_actions array
-    char next_action = play_actions[p_player->action];
+ //   char next_action = play_actions[p_player->action];
 
     // Update the player's position based on the action
-    int new_x = p_player->x;
-    int new_y = p_player->y;
+   // int new_x = p_player->x;
+  //  int new_y = p_player->y;
 
     // Color the new spot with the player's ID
-    world_paint_spot(new_x, new_y, p_player->id);
+   // world_paint_spot(new_x, new_y, p_player->id);
 
     // Update the player's position and action index
-    p_player->x = new_x;
-    p_player->y = new_y;
-    p_player->action++;
+   // p_player->x = new_x;
+   // p_player->y = new_y;
+   // p_player->action++;
 }
 
 

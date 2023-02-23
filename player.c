@@ -1,7 +1,8 @@
 #include <stdlib.h>
 //#include "/SDL2/include/SDL.h"
-#include "/Users/cecilia/Desktop/SDL2/include/SDL.h"
-#include "/Users/cecilia/Desktop/SDL2/include/SDL_stdinc.h"
+#include "/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2/include/SDL.h"
+#include "/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2/include/SDL_opengl.h"
+#include "/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2/include/SDL_stdinc.h"
 
 #include "player.h"
 #include "param.h"

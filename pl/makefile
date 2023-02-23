@@ -5,13 +5,14 @@ LDFLAGS=
 NAME=example
 
 all: $(OBJS)
-	gcc -shared -o p1.so player1.o
-	gcc -shared -o p2.so player2.o
-	gcc -shared -o p3.so player3.o
-	gcc -shared -o p4.so player4.o
+	clang -shared -o p1.so player1.o
+	clang -shared -o p2.so player2.o
+	clang -shared -o p3.so player3.o
+	clang -shared -o p4.so player4.o
 
 clean:
 	rm $(OBJS)
 	rm -f *.so
 	rm -f *.o
 	@echo FIN RM PL
+
