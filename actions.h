@@ -2,7 +2,10 @@
 #define __ACTIONS__
 
 #include "player.h"
-
+#include "param.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "player.c"
 enum action
 {
     ACTION_STILL,
