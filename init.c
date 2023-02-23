@@ -8,6 +8,7 @@
 #include "world.h"
 #include "actions.h"
 #include "splash.h"
+#include "player.h"
 
 
 uint32_t colors[MAX_PLAYERS+1] = { 0 };
@@ -34,7 +35,8 @@ void inits(int argc, char *argv[])
     screenSurface = SDL_GetWindowSurface(window);
     SDL_PixelFormat *format = screenSurface->format;
     init_colors(format);
-    actions_init(t_player* p_player);
+    //actions_init(t_player *p_player);
+    actions_init();
     world_create_players();
     printf("inits done\n");
 }

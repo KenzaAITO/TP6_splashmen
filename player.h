@@ -15,7 +15,7 @@ typedef struct s_player
     int32_t credits;
     uint32_t count;
 
-} t_player;
+}t_player;
 
 void player_init(t_player* p_player, uint8_t num);
 

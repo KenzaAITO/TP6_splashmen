@@ -1,7 +1,7 @@
 SRCS=$(wildcard *.c)
 OBJS=$(SRCS:.c=.o)
 #CFLAGS= -Wall -g2 -fPIC  # -DDEBUG
-CFLAGS= -W1 -g2 -fPIC  # -DDEBUG
+CFLAGS= -Wall -g2 -fPIC# -DDEBUG
 #LDFLAGS= -ldl -l/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2
 LDFLAGS= -l/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2
 EXE=splash

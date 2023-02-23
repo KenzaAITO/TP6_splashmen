@@ -24,7 +24,7 @@ void world_create_players()
 
     for (i = 0; i < MAX_PLAYERS; i++)
     {
-        players[i] = (t_player*) malloc(sizeof(t_player));
+        players[i] = (t_player*)malloc(sizeof(t_player));
         player_init(players[i], i);
         world_paint_spot(players[i]->x, players[i]->y, players[i]->id);
     }

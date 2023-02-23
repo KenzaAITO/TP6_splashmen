@@ -202,7 +202,7 @@ void actions_do(t_player *p_player, enum action act_id){
             p_player->credits-=9;
             int a=p_player->x;
             int b=p_player->y;
-            p_player->count;
+            p_player->count++;//original : <p_player->count;>
             int c= p_player->count + BOMB_COUNTER ;
             while (c!=p_player->count);
             for (int i=a-1; i<3;i++){
@@ -224,11 +224,19 @@ void actions_do(t_player *p_player, enum action act_id){
             }
         }else printf("credits nn suffisant!");
         break;
+    default:
+        printf ("Cas d'erreur");// code pour tous les autres cas
+        break;
     }
-}
-void actions_init(t_player* p_player)
-{
-    p_player->count=0;
-    p_player->credits=P_CREDITS;
 
 }
+void actions_init()
+{
+}
+//void actions_init(t_player* p_player)//K "j'aurais mis <t_player* p_player> en param
+//{
+ 
+ //   p_player->count;
+ //   p_player->credits=P_CREDITS;
+
+//}

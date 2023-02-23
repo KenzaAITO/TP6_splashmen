@@ -3,12 +3,11 @@
 #include <string.h>
 #include "/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2/include/SDL.h"
 #include "/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2/include/SDL_opengl.h"
-
-
 #include "param.h"
 #include "world.h"
 #include "actions.h"
 #include "splash.h"
+
 
 int quitting = 0;
 SDL_Window *window = NULL;
