@@ -1,4 +1,6 @@
 #include "actions.h"
+#include "world.h"
+#include "player.h"
 
 void actions_do(t_player *p_player, enum action act_id){
     switch (act_id){
@@ -224,7 +226,7 @@ void actions_do(t_player *p_player, enum action act_id){
         break;
     }
 }
-actions_init()
+void actions_init(t_player* p_player)
 {
     p_player->count=0;
     p_player->credits=P_CREDITS;

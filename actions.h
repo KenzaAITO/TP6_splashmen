@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "player.c"
+
 enum action
 {
     ACTION_STILL,
@@ -27,5 +28,5 @@ enum action
 };
 
 void actions_do(t_player *p_player, enum action act_id);
-void actions_init();
+void actions_init(t_player* p_player);
 #endif
