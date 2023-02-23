@@ -35,6 +35,7 @@ clean:
 	$(DEL) -f core
 	rm -f *.a
 	rm -f *.so
+	rm -f *.gho
 	rm -f $(OBJS)
 	rm -f $(EXE)
 
