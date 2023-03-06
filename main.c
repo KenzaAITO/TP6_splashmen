@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <dlfcn.h> //dlopen une lib dynamique
 #include "/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2/include/SDL.h"
 #include "/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2/include/SDL_opengl.h"
 #include "param.h"
-#include "world.h"
+#include "world.h" 
 #include "actions.h"
 #include "splash.h"
 
@@ -32,7 +33,11 @@ int SDLCALL watch(void *userdata, SDL_Event *event)
 int main(int argc, char *argv[])
 {
 
-    if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) != 0)
+   int *fichier;
+
+    fichier = dlopen("/Users/cecilia/Desktop/projet_ecole/rebornExplosion/SDL2", RTLD_LAZY);
+
+    if(SDL_Init(SDL_INIT_VIDEO | SDL_INIT_EVENTS) != 0)
     {
         SDL_Log("Failed to initialize SDL: %s", SDL_GetError());
         return 1;
@@ -50,8 +55,11 @@ int main(int argc, char *argv[])
     }
     void inits(int argc,char *argv[]);
     
-
     main_loop();
+
+
+
+
 
     SDL_DelEventWatch(watch, NULL);
     SDL_DestroyWindow(window);
